@@ -3,9 +3,10 @@ package com.saugat.firstspringproject;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Laptop {
+public class Laptop implements Computer{
 
-    public void display(){
-        System.out.println("Laptop class");
+    @Override
+    public void compile(){
+        System.out.println("This is Laptop Class");
     }
 }
