@@ -1,5 +1,6 @@
 package com.saugat.firstspringproject;
 
+import com.saugat.firstspringproject.model.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

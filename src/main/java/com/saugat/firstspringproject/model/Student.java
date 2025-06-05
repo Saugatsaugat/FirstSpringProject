@@ -1,4 +1,4 @@
-package com.saugat.firstspringproject;
+package com.saugat.firstspringproject.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

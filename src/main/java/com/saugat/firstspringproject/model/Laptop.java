@@ -1,4 +1,4 @@
-package com.saugat.firstspringproject;
+package com.saugat.firstspringproject.model;
 
 import org.springframework.stereotype.Component;
 
