@@ -6,6 +6,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import java.util.List;
+
 @SpringBootApplication
 public class FirstSpringProjectApplication {
 
@@ -24,6 +26,14 @@ public class FirstSpringProjectApplication {
 
         ProductService ps = context.getBean(ProductService.class);
         ps.saveData(p);
+
+        List<Product> productList = ps.getAll();
+        productList.forEach(x->{
+            System.out.println("Id: "+x.getId());
+            System.out.println("Name: "+x.getName());
+            System.out.println("GroupName: "+x.getGroupName());
+            System.out.println("\n");
+        });
     }
 
 }

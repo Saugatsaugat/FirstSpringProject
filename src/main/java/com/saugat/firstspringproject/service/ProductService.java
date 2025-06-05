@@ -5,6 +5,8 @@ import com.saugat.firstspringproject.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProductService {
     private ProductRepository repository;
@@ -16,6 +18,10 @@ public class ProductService {
 
     public void saveData(Product p){
         repository.save(p);
+    }
+
+    public List<Product> getAll(){
+        return repository.findAll();
     }
 
 }
