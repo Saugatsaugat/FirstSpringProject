@@ -18,7 +18,7 @@ public class FirstSpringProjectApplication {
 //        service.laptopPerformance();
 
         Product p = context.getBean(Product.class);
-        p.setId(1);
+        p.setId(4);
         p.setName("Soda");
         p.setGroupName("Drinks");
 
